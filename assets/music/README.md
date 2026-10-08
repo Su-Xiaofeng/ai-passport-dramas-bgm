@@ -8,16 +8,17 @@ music-video recordings; they do not identify or license an original master.
 
 | File | Track | Download source | Original start | Excerpt duration |
 | --- | --- | --- | --- | --- |
-| `01.wav` | Cage | [Bilibili](https://www.bilibili.com/video/BV1fojt6RE7L/) | 0:00 | 30 s |
-| `02.wav` | Toji Fushiguro March | [Douyin](https://www.douyin.com/video/7609996387622718771) | 0:00 | 30 s |
-| `03.wav` | Villain Rescue | [Douyin](https://www.douyin.com/video/7618536846884379618) | 0:02 | 19.13 s |
-| `04.wav` | Try | [Bilibili](https://www.bilibili.com/video/BV1MaqABUEAA/) | 0:00 | 30 s |
-| `05.wav` | Right (Bite March) | [Bilibili](https://www.bilibili.com/video/BV1YMb56NEHW?p=6) | 0:00 | 30 s |
-| `06.wav` | Amazon | [Bilibili](https://www.bilibili.com/video/BV1arHh6wEUN/) | 0:04 | 26.0105 s |
+| `01.wav` | Cage | [Bilibili P1](https://www.bilibili.com/video/BV1YMb56NEHW?p=1) | 0:00 | 30 s |
+| `02.wav` | Toji Fushiguro March | [Bilibili P11](https://www.bilibili.com/video/BV1YMb56NEHW?p=11) | 0:00 | 30 s |
+| `03.wav` | Villain Rescue | [Bilibili P12](https://www.bilibili.com/video/BV1YMb56NEHW?p=12) | 0:02.5 | 18.63 s |
+| `04.wav` | Try | [Bilibili P8](https://www.bilibili.com/video/BV1YMb56NEHW?p=8) | 0:00 | 30 s |
+| `05.wav` | Right (Bite March) | [Bilibili P6](https://www.bilibili.com/video/BV1YMb56NEHW?p=6) | 0:00 | 30 s |
+| `06.wav` | Amazon | [Bilibili P2](https://www.bilibili.com/video/BV1YMb56NEHW?p=2) | 0:00 | 26.0105 s |
 
-Track 5 uses Part 6 of the linked Bilibili collection, titled Right (Bite March).
-Try uses the Andre Juss video recording. Its match to an electronic DJ Remix
-is unverified. Total playback material is 165.1405 seconds.
+All six tracks use the selected Bilibili collection. Part 11 is titled
+Illusory Day 4.0 (Toji Fushiguro March); Part 12 is titled Results Screen
+(Villain Rescue). Try uses Part 8 and Right (Bite March) uses Part 6.
+Total playback material is 164.6405 seconds.
 
 `sources.json` contains the source-page titles, original-file SHA-256 hashes,
 WAV hashes and trim positions. `playlist.json` specifies display titles, file
@@ -34,7 +35,7 @@ python3 tools/pack_bgm.py --require-all
 
 The packer uses FFmpeg and Python 3 to apply peak limiting and short fades,
 then produces 4-bit IMA ADPCM for 16-bit playback. The firmware embeds
-1,321,124 audio bytes and needs no separate audio import or network connection.
+1,317,124 audio bytes and needs no separate audio import or network connection.
 Editing a title also requires regenerating the CJK font subsets.
 
 Audio redistribution permission is unverified. The repository's code license

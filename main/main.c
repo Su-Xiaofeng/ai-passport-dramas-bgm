@@ -1,4 +1,4 @@
-/* Standalone Queen Reborn BGM. The playback page owns the screen until reboot. */
+/* 重生之我是女王 BGM：开机进入播放页，页面保持到设备重启。 */
 #include "queen_bgm.h"
 #include "bgm_ui.h"
 #include "bsp_button.h"

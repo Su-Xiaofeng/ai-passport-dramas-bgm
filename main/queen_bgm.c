@@ -1,4 +1,4 @@
-/* One worker exclusively owns the codec/model; buttons enqueue lightweight
+/* 重生之我是女王 BGM. One worker exclusively owns the codec/model; buttons enqueue lightweight
  * events and the UI consumes copied snapshots. Both workers acknowledge stop
  * before their queues or screen can be released. */
 #include "queen_bgm.h"

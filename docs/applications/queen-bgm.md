@@ -21,8 +21,8 @@ The player displays title, track number, time, progress, volume, battery and mod
 ## Music and fonts
 
 See [the music source table](../../assets/music/README.md) for all six recordings
-and original excerpt positions. The WAV clips total 165.1405 seconds. The
-16 kHz mono IMA ADPCM payload occupies 1,321,124 bytes in Flash.
+and original excerpt positions. The WAV clips total 164.6405 seconds. The
+16 kHz mono IMA ADPCM payload occupies 1,317,124 bytes in Flash.
 `assets/music/playlist.json` defines the display titles and ordering;
 `assets/music/sources.json` records source pages, versions, trims and hashes.
 WAV files are already trimmed, so every playlist start is 0.
@@ -73,6 +73,11 @@ On-device acceptance checks direct boot, Chinese rendering, playback/pause,
 track switching, repeat modes, inactive double clicks, volume limits, battery
 and long-duration playback. Build results and device results are reported
 separately.
+
+The delivered version passes the direct-boot check, and the user confirms all
+six audio excerpts are correct. Controls and navigation have user acceptance.
+Volume extremes, full completion of all six tracks, battery and long-duration
+stress remain unverified.
 
 Flash only the verified merged `build/FoloToy-AI-Passport-full.bin` at `0x0`.
 Keep its SHA-256 archive and matching ELF locally for crash decoding. Build

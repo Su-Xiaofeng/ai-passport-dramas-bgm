@@ -18,8 +18,8 @@ OK 播放/暂停并保留进度，长按 OK 切换单曲循环/播放一次，�
 ## 音乐与字体
 
 [音乐来源表](../../assets/music/README.zh_CN.md)列明六首录音和原始截取位置。
-WAV 片段合计 165.1405 秒，16 kHz 单声道 IMA ADPCM 在 Flash 中占
-1,321,124 字节。`assets/music/playlist.json` 定义歌名与顺序；
+WAV 片段合计 164.6405 秒，16 kHz 单声道 IMA ADPCM 在 Flash 中占
+1,317,124 字节。`assets/music/playlist.json` 定义歌名与顺序；
 `assets/music/sources.json` 记录来源页面、版本、截取位置和哈希。
 WAV 已完成裁剪，所有配置 start 均为 0。
 
@@ -59,6 +59,9 @@ NVS/PHY/factory 分区布局，播放不写入持久设置。
 
 真机验收覆盖开机直达、中文显示、播放暂停、切歌、循环模式、双击无操作、音量
 边界、电量与长时间播放。构建结果与设备结果分别记录。
+
+当前交付版本已通过开机直达检查，用户已确认六首音频正确。按键与播放流程
+已完成用户验收；音量极值、六首完整播放、电池和长时间压力测试仍待验证。
 
 仅使用验证通过的合并镜像 `build/FoloToy-AI-Passport-full.bin`，地址 `0x0`。
 匹配 SHA-256 的归档和 ELF 留在本地用于崩溃解析；构建产物与设备日志放在 Git

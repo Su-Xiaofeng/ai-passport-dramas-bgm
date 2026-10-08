@@ -1,11 +1,11 @@
 {
-  "audio_bytes": 1321124,
+  "audio_bytes": 1317124,
   "tracks": [
     {
       "title": "囚笼",
       "loaded": true,
-      "source_sha256": "af5c241839371114f795b90fe5d24a99f704ac1459d5bec7fff89a7cdf65405d",
-      "encoded_sha256": "82666ce6c2365a45a7ac0c1fe9ecb6217a800a8c41d2a35ec83e767fe260bdcb",
+      "source_sha256": "74b8784497d3a3198cabe01d9c5a1740741c13d1d2d5b250ea8ca55ce9411b92",
+      "encoded_sha256": "3c14f5b30d4fc7a81877706ea7af5e6ec6b964f4046c0b427291c0fefda8565b",
       "samples": 480000,
       "bytes": 240000,
       "start": 0,
@@ -14,8 +14,8 @@
     {
       "title": "伏黑甚尔进行曲",
       "loaded": true,
-      "source_sha256": "0dbcbd8f610fb6802ccde37ee291a17ec6ae83cfa90df9ef466de30e04dddfd2",
-      "encoded_sha256": "bba8780966abfd37e7ac3dddf399495146dcac914058afc6eb31039c4cc102ab",
+      "source_sha256": "ec6a609f45613e61fd9b3c0fd80fbe38ef813b4db89c9a1c0271942886182c4d",
+      "encoded_sha256": "e16dfcc038975cffd2512ca694daa09059d1a3f919ef409ec63ade1c97b39491",
       "samples": 480000,
       "bytes": 240000,
       "start": 0,
@@ -24,18 +24,18 @@
     {
       "title": "反派烧气救场",
       "loaded": true,
-      "source_sha256": "cf34a6ff5de76b17783af258e88a969f433109d78367d2f02537fc64125cbc57",
-      "encoded_sha256": "8cde7b7d729f50c9e3d1028e46262096c8394b8c3838e80c64c9dbdc7597f431",
-      "samples": 306080,
-      "bytes": 153040,
+      "source_sha256": "44890214f484075a6d62324740af75dad9d74d18d96063ad6f37a897e499d815",
+      "encoded_sha256": "fff513784db7b0eae43a7bbe64f18d3e0fef14a31a44d21780f864da61f09105",
+      "samples": 298080,
+      "bytes": 149040,
       "start": 0,
-      "seconds": 19.13
+      "seconds": 18.63
     },
     {
       "title": "Try",
       "loaded": true,
-      "source_sha256": "1ff2dee255ccb231dc2677ca0348a837ffda316f21d968e8d186733a1406815d",
-      "encoded_sha256": "67e38ef9c5674eb98401207bd9a7fa4bf70052cbfe46aa4cfe845ba3e4e94a0f",
+      "source_sha256": "0f6d9a5d3cfba3ef337ebbb9a7d728e50b41f23c8da2f6a6fb41056e73101a6d",
+      "encoded_sha256": "668f90588a8199aba3af010dd1553726b952ac5e0e4f10da16978e50ab88bc5e",
       "samples": 480000,
       "bytes": 240000,
       "start": 0,
@@ -54,8 +54,8 @@
     {
       "title": "Amazon",
       "loaded": true,
-      "source_sha256": "5aabda23783108878871163119064c1e9211c05e6b8aaf946d31c1098368d6f8",
-      "encoded_sha256": "62f0ba136dec5f1100e66338b9ae080f27d803907f72bb363e3023538f7836a4",
+      "source_sha256": "51c5aaa496b58d4088912a56024dc439a9efd0139c8e92b1241ea0a8071f39d8",
+      "encoded_sha256": "6f3a994ddf31e99d8976bc8e7b22f14fef9d2b636f3a6a42de9659a31d297f79",
       "samples": 416168,
       "bytes": 208084,
       "start": 0,
