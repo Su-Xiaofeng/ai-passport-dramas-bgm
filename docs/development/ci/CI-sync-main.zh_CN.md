@@ -4,13 +4,13 @@
 
 # 上游同步（CI / Upstream Sync）
 
-本仓库提供一套基于 GitHub Actions 的自动上游同步流水线，用于定期把上游 `FoloToy/ai-passport` 的 `main` 分支更新同步到本 fork 的 `main` 分支。
+本仓库提供一套基于 GitHub Actions 的手动上游同步流水线，用于按需把上游 `FoloToy/ai-passport` 的 `main` 分支更新同步到本 fork 的 `main` 分支。
 
 本文件与 `.github/workflows/sync-main.yml` 一同维护，工作流行为变化时必须同步更新。
 
 ## 触发条件
 
-- **schedule**：每天 00:00（UTC）自动运行一次。
+- **schedule**：本播放器仓库已关闭定时触发。
 - **workflow_dispatch**：可在 GitHub Actions 页面手动触发（用于立即同步/排查问题）。
 
 > 该工作流仅在仓库为 **fork** 时生效（`if: github.event.repository.fork`）；非 fork 仓库不运行。
@@ -24,7 +24,7 @@
 ## 注意事项
 
 - 同步目标与上游分支均为 `main`，与 fork 用户约定（`main` 仅允许修改根目录 `README.md` 与 `docs/assets/`）配合使用：`main` 保持与上游最新基线同步、不产生冲突。
-- **在 `main` 直接开发的例外**：如果用户执意要在 `main` 分支直接开发，必须**停用/关闭本 workflow**（Actions 页面 → Disable），否则每日自动同步会把上游改动强行合入 `main`，产生冲突或覆盖本地开发内容。
+- **在 `main` 直接开发的例外**：如果用户执意要在 `main` 分支直接开发，必须**停用/关闭本 workflow**（Actions 页面 → Disable），否则定时同步会把上游改动合入 `main`，产生冲突或覆盖本地开发内容。
 - 若同步失败，查看 Actions 日志确认是否为上游 workflow 文件变更所致；必要时按提示手动在 GitHub 页面 Sync Fork。
 - 升级 Action 时必须从官方仓库核对目标版本对应的完整 commit SHA，并同步更新 workflow 行尾的版本注释。
 

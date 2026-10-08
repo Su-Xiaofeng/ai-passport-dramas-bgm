@@ -10,7 +10,7 @@
 | 验证通过的合并固件 | `build/FoloToy-AI-Passport-full.bin`，地址 0x0；已包含代码、字体、六段音频 |
 | 封面 | 有代表性的 PNG/JPEG/WebP，最大 10 MiB |
 | 中英文标题和介绍 | 项目名、按键、开机直达、片段时长与离线播放方式 |
-| 公开 HTTPS 源码仓库 | 包含修改后的源码/fork，不能只填未修改的上游仓库地址 |
+| 公开 HTTPS 源码仓库（可选） | [当前项目源码](https://github.com/Su-Xiaofeng/ai-passport-dramas-bgm)；提供公开源码会自动支持二次创作 |
 | 创作者账号 | 用户本人在官方社区登录；正式上传需要明确授权 |
 
 可复现源码要保留 `main/`、`components/bsp/`、CMake/配置/分区、依赖锁、所需字体
@@ -19,9 +19,10 @@
 
 社区材料不需要上传本地 `build/` 目录、ELF/map/调试日志、设备读回文件、凭据、
 `.git/`、`.agents/`、`.codex/`、本地 ESP-IDF/工具链下载、候选音频或完整来源下载。
-匹配固件的 ELF/manifest 与私人日志留在本地用于排障。源码 ZIP 可选，不能替代
-社区要求的公开 HTTPS 源码仓库。
+匹配固件的 ELF/manifest 与私人日志留在本地用于排障。源码 ZIP 可选；分享源码时，
+应填写含本项目修改的公开 HTTPS 仓库。
 
-社区发布应提供封面与当前源码的公开 HTTPS URL。六首录音的公开再分发授权
+社区发布必须提供封面。当前源码位于
+[Su-Xiaofeng/ai-passport-dramas-bgm](https://github.com/Su-Xiaofeng/ai-passport-dramas-bgm)。六首录音的公开再分发授权
 尚未确认，源码音频和内置音频固件都需确认许可。音源与截取位置见
 [音乐来源](../../assets/music/README.zh_CN.md)。固件直接开机进入播放器。

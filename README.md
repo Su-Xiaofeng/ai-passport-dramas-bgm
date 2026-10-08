@@ -2,6 +2,8 @@
 
 # Queen Reborn BGM
 
+Project source: [Su-Xiaofeng/ai-passport-dramas-bgm](https://github.com/Su-Xiaofeng/ai-passport-dramas-bgm).
+
 An offline six-track BGM player for FoloToy AI Passport, built from
 [FoloToy/ai-passport](https://github.com/FoloToy/ai-passport).
 Boot opens the black-and-gold 240 x 320 player, paused at 45% volume with
@@ -32,6 +34,8 @@ python3 tools/pack_bgm.py --require-all
 Flash the verified merged `build/FoloToy-AI-Passport-full.bin` at `0x0`.
 The six WAV excerpts and generated audio/font sources are included for
 reproducible builds. Build products, local downloads and debug logs are ignored.
+
+The `main` branch contains this player. Upstream synchronization is manual.
 
 ## Documentation
 

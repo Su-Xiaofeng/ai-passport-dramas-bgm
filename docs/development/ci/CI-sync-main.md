@@ -4,7 +4,7 @@
 
 # Upstream Synchronization
 
-`.github/workflows/sync-main.yml` synchronizes a fork's `main` branch with `FoloToy/ai-passport:main`. It runs daily at 00:00 UTC and by manual dispatch, and is skipped when the repository is not a fork.
+`.github/workflows/sync-main.yml` synchronizes a fork's `main` branch with `FoloToy/ai-passport:main`. This application repository enables manual dispatch only; scheduled synchronization is disabled. The workflow is skipped when the repository is not a fork.
 
 The workflow checks out the target `main` without persisting credentials and uses the full-SHA-pinned upstream-sync Action. Its generated `GITHUB_TOKEN` has only `contents: write`; no manually configured token is required. If synchronization fails after an upstream workflow change, use GitHub's **Sync fork** once and inspect the Actions log.
 

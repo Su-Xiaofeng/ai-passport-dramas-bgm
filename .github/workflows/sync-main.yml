@@ -4,8 +4,7 @@ permissions:
   contents: write
 
 on:
-  schedule:
-    - cron: "0 0 * * *" # every day
+  # This application repository synchronizes upstream only when requested.
   workflow_dispatch:
 
 jobs:

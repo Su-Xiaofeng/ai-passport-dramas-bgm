@@ -10,7 +10,7 @@ requires these community submission materials:
 | Verified merged firmware | `build/FoloToy-AI-Passport-full.bin`, programmed at 0x0; embeds code, fonts and six clips |
 | Cover | Representative PNG/JPEG/WebP, at most 10 MiB |
 | Bilingual title and description | Name, controls, direct boot, excerpt lengths and offline behavior |
-| Public HTTPS source repository | Your modified source/fork, rather than the unchanged upstream page |
+| Public HTTPS source repository (optional) | [Current project source](https://github.com/Su-Xiaofeng/ai-passport-dramas-bgm); public source automatically enables remixing |
 | Creator account | Creator signs in on the official community; upload requires explicit approval |
 
 Keep `main/`, `components/bsp/`, CMake/config/partitions, dependency lock,
@@ -23,10 +23,10 @@ Do not upload local `build/` trees, ELF/map/debug logs, device readbacks,
 credentials, `.git/`, `.agents/`, `.codex/`, local ESP-IDF/toolchain downloads,
 audio candidates or full reference downloads as community materials. Keep the
 matching ELF/manifest and private logs locally for debugging. A source ZIP is
-optional and does not replace the required public HTTPS repository.
+optional. When sharing source, use a public HTTPS repository with this project's modifications.
 
-Community releases provide a cover and a public HTTPS URL for the current
-source. Redistribution permission for all six recordings is unverified and
+Community releases require a cover. The current project source is available
+at [Su-Xiaofeng/ai-passport-dramas-bgm](https://github.com/Su-Xiaofeng/ai-passport-dramas-bgm). Redistribution permission for all six recordings is unverified and
 applies to both source audio and embedded firmware. See the
 [music sources](../../assets/music/README.md) for recordings and excerpts.
 The firmware boots directly into the player.

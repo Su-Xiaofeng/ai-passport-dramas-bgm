@@ -2,6 +2,8 @@
 
 # 重生之我是女王 BGM
 
+项目源码： [Su-Xiaofeng/ai-passport-dramas-bgm](https://github.com/Su-Xiaofeng/ai-passport-dramas-bgm)。
+
 面向 FoloToy AI Passport 的离线六曲 BGM 播放器，基于
 [FoloToy/ai-passport](https://github.com/FoloToy/ai-passport)。
 开机直接进入黑金色 240 x 320 播放页，默认暂停、音量 45%、单曲循环。
@@ -31,6 +33,8 @@ python3 tools/pack_bgm.py --require-all
 使用验证通过的合并镜像 `build/FoloToy-AI-Passport-full.bin`，烧录地址为 `0x0`。
 仓库包含六个 WAV 片段及生成的音频/字体源码，可复现构建；构建产物、本地下载
 原文件和调试日志由 Git 忽略。
+
+`main` 分支用于本播放器，上游更新采用手动同步。
 
 ## 文档
 
