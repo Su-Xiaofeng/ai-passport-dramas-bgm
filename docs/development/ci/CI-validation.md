@@ -19,6 +19,9 @@ Two workflows validate pull requests: `.github/workflows/static-checks.yml` and
   build/configuration directory, verifies the build and the merged `0x0` image
   contents/offsets, and retains the artifact for seven days.
 
+Static checks installs FFmpeg for the six-file audio-packing integration test.
+Local host checks require a C compiler, Python 3, FFmpeg and actionlint.
+
 ## Path filtering
 
 `firmware-checks.yml` ignores paths that cannot affect the firmware build:

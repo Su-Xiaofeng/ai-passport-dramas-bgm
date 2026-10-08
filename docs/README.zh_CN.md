@@ -41,6 +41,10 @@
 | --- | --- | --- |
 | 开放固件与可复用示例，为你的创意留出发挥空间。 | 从一个简单想法出发，跟随清晰指南把它变成现实。 | 打造随身伙伴、小工具、游戏，或任何你能想到的东西。 |
 
+本仓库的应用是[重生之我是女王 BGM](applications/queen-bgm.zh_CN.md)，
+音频来源见[音乐表](../assets/music/README.zh_CN.md)。以下硬件与示例资料描述可复用
+的 BSP 和上游参考实现。
+
 ## 找到你的起点
 
 | 我想要…… | 从这里开始 |
@@ -51,7 +55,7 @@
 | 了解硬件、参与贡献 | [硬件指南](hardware-design/AI_HARDWARE_DEVELOPMENT_GUIDE.zh_CN.md) · [贡献指南](../.github/CONTRIBUTING.zh_CN.md) |
 
 > [!IMPORTANT]
-> `main` 是最小可运行的**硬件测试基线**，不是成品应用。
+> 上游 `main` 是最小可运行的**硬件测试基线**；本仓库的 `main/` 构建 BGM 播放器。
 > 二次开发必须重新设计 UI，禁止沿用当前 demo 测试菜单和页面；
 > BSP API 与非 UI 逻辑仍可复用。
 
@@ -101,7 +105,7 @@
 
 每个 `demo/*` 分支都从基线演化出一个独立应用。它们的价值是展示具体问题的实现方式；新应用通常应从 `main` 建分支，按需参考，而不是把多个 demo 整体合并。
 
-`main` 上的菜单和 `demo_*.c` 页面只是硬件能力测试界面，不是应用 UI。所有二次开发应用都必须重新设计并实现页面与交互流程，禁止使用当前测试菜单、页面或界面外壳；改名、换颜色不算满足要求。BSP API、普通 LVGL 控件、生命周期模式和独立逻辑仍可复用。详见[强制 UI 重新设计规则](development/ai-guide.zh_CN.md#二次开发-ui-强制重新设计)；维护基线硬件测试 demo 本身属于另一类任务。
+上游 `main` 上的菜单和 `demo_*.c` 页面只是硬件能力测试界面，不是应用 UI。所有二次开发应用都必须重新设计并实现页面与交互流程，禁止使用当前测试菜单、页面或界面外壳；改名、换颜色不算满足要求。BSP API、普通 LVGL 控件、生命周期模式和独立逻辑仍可复用。详见[强制 UI 重新设计规则](development/ai-guide.zh_CN.md#二次开发-ui-强制重新设计)；维护基线硬件测试 demo 本身属于另一类任务。
 
 | 分支 | 展示的应用 | 值得复用的模式 |
 | --- | --- | --- |
@@ -143,7 +147,7 @@ git switch -c feature/my-passport-app
 <details>
 <summary><strong>展开完整能力表</strong> — 接口、限制与实现细节</summary>
 
-下表描述的是当前 `main` 已提供的应用能力，而不是芯片数据手册中所有可能的能力。
+下表描述的是 BSP 和上游参考页面提供的能力，而不是芯片数据手册中所有可能的能力。
 
 | 能力 | 已确认实现 | 应用接口 | 必须遵守的边界 |
 | --- | --- | --- | --- |
@@ -178,7 +182,7 @@ git switch -c feature/my-passport-app
 ```text
 components/bsp/include/  BSP 公开 API 与 bsp_pins.h 硬件事实
 components/bsp/src/      显示、按键、音频、电池、共享 I2C 实现
-main/                    最小菜单、LVGL UI 与独立硬件演示页
+main/                    BGM 页面、播放状态、解码与任务；保留上游参考源码
 tests/                   可脱离硬件运行的轻量逻辑测试源
 tools/                   本地与 CI 共用的验证及固件校验脚本
 docs/                    项目说明、变更记录、工程/协作规范与设计参考
@@ -199,6 +203,8 @@ LICENSE                  仓库许可证
 
 | 入口 | 你可以找到 |
 | --- | --- |
+| [BGM 播放器](applications/queen-bgm.zh_CN.md) | 当前应用的按键、音乐、字体与构建 |
+| [音乐来源](../assets/music/README.zh_CN.md) | 六首录音链接、片段时长与来源哈希 |
 | [开发指南](development/README.zh_CN.md) | AI 工作流、工程规范、CI 与发布流程 |
 | [AI 技能](../skills/README.zh_CN.md) | 开发、环境准备、构建、真机测试与故障诊断 |
 | [硬件资料](hardware-design/README.zh_CN.md) | 板卡事实、接口边界、验收清单与排障 |

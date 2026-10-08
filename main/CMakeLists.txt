@@ -1,16 +1,9 @@
 idf_component_register(
-    SRCS "main.c"
-         "demo_navigation.c"
-         "ui_pixel.c"
-         "ui_pixel_math.c"
-         "demo_display.c"
-         "demo_button.c"
-         "demo_audio.c"
-         "demo_battery.c"
-         "demo_radio.c"
-         "demo_wifi.c"
-         "demo_ble.c"
-         "demo_low_power.c"
+    SRCS "main.c" "queen_bgm.c" "bgm_model.c" "bgm_adpcm.c" "bgm_ui.c" "bgm_tracks_data.c"
+         "../assets/fonts/bgm_font_12.c" "../assets/fonts/bgm_font_16.c" "../assets/fonts/bgm_font_20.c"
     INCLUDE_DIRS "."
-    REQUIRES bsp bt esp_event esp_hw_support esp_netif esp_timer esp_wifi nvs_flash
+    REQUIRES bsp esp_timer
 )
+
+# PCM must stay off the audio worker stack.
+set_source_files_properties("queen_bgm.c" PROPERTIES COMPILE_OPTIONS "-Werror=frame-larger-than=512")
