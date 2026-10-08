@@ -2,7 +2,7 @@
 
 # 重生之我是女王 BGM
 
-项目源码： [Su-Xiaofeng/ai-passport-dramas-bgm](https://github.com/Su-Xiaofeng/ai-passport-dramas-bgm)。
+项目源码： [Su-Xiaofeng/ai-passport-dramas-bgm](https://github.com/Su-Xiaofeng/ai-passport-dramas-bgm/tree/feature/queen-bgm)。
 
 面向 FoloToy AI Passport 的离线六曲 BGM 播放器，基于
 [FoloToy/ai-passport](https://github.com/FoloToy/ai-passport)。
@@ -34,13 +34,18 @@ python3 tools/pack_bgm.py --require-all
 仓库包含六个 WAV 片段及生成的音频/字体源码，可复现构建；构建产物、本地下载
 原文件和调试日志由 Git 忽略。
 
-`main` 分支用于本播放器，上游更新采用手动同步。
+`feature/queen-bgm` 分支用于本播放器；仓库 `main` 保留上游硬件测试基线和
+项目目录。构建本玩法时，克隆播放器分支：
+
+```bash
+git clone --branch feature/queen-bgm https://github.com/Su-Xiaofeng/ai-passport-dramas-bgm.git
+```
 
 ## 文档
 
-- [播放器结构、界面与验证](docs/applications/queen-bgm.zh_CN.md)
+- [播放器结构、界面与验证](docs/assets/queen-bgm.zh_CN.md)
 - [六首音乐来源与片段时长](assets/music/README.zh_CN.md)
-- [社区发布材料](docs/applications/queen-bgm-publishing.zh_CN.md)
+- [社区发布材料](docs/assets/queen-bgm-publishing.zh_CN.md)
 - [硬件与开发指南](docs/README.zh_CN.md)
 
 ## 许可

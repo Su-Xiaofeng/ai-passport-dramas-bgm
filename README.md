@@ -2,7 +2,7 @@
 
 # Queen Reborn BGM
 
-Project source: [Su-Xiaofeng/ai-passport-dramas-bgm](https://github.com/Su-Xiaofeng/ai-passport-dramas-bgm).
+Project source: [Su-Xiaofeng/ai-passport-dramas-bgm](https://github.com/Su-Xiaofeng/ai-passport-dramas-bgm/tree/feature/queen-bgm).
 
 An offline six-track BGM player for FoloToy AI Passport, built from
 [FoloToy/ai-passport](https://github.com/FoloToy/ai-passport).
@@ -35,13 +35,19 @@ Flash the verified merged `build/FoloToy-AI-Passport-full.bin` at `0x0`.
 The six WAV excerpts and generated audio/font sources are included for
 reproducible builds. Build products, local downloads and debug logs are ignored.
 
-The `main` branch contains this player. Upstream synchronization is manual.
+The `feature/queen-bgm` branch contains this player. The repository `main`
+keeps the upstream hardware-test baseline and the project catalog. Clone the
+player branch to build this application:
+
+```bash
+git clone --branch feature/queen-bgm https://github.com/Su-Xiaofeng/ai-passport-dramas-bgm.git
+```
 
 ## Documentation
 
-- [Player architecture, UI and validation](docs/applications/queen-bgm.md)
+- [Player architecture, UI and validation](docs/assets/queen-bgm.md)
 - [Six music sources and excerpt lengths](assets/music/README.md)
-- [Community publishing materials](docs/applications/queen-bgm-publishing.md)
+- [Community publishing materials](docs/assets/queen-bgm-publishing.md)
 - [Hardware and development guides](docs/README.md)
 
 ## Licenses

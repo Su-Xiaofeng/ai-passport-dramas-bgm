@@ -17,9 +17,6 @@
   ESP32-C3 运行 `./tools/validate.sh --firmware`，验证编译、0x0 合并固件的偏移与内容，并保留 7 天
   Actions artifact。
 
-Static checks 安装 FFmpeg，用于音频打包的六文件主机集成测试。本地主机测试
-需要 C 编译器、Python 3、FFmpeg 与 actionlint。
-
 ## 路径过滤
 
 `firmware-checks.yml` 忽略不会影响固件构建的路径：`docs/**`、`skills/**` 与 `*.md`。
