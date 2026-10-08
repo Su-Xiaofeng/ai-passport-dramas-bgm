@@ -1,0 +1,41 @@
+{
+  "sample_rate": 16000,
+  "tracks": [
+    {
+      "title": "囚笼",
+      "file": "01.wav",
+      "start": 0,
+      "duration": 30
+    },
+    {
+      "title": "伏黑甚尔进行曲",
+      "file": "02.wav",
+      "start": 0,
+      "duration": 30
+    },
+    {
+      "title": "反派烧气救场",
+      "file": "03.wav",
+      "start": 0,
+      "duration": 18.63
+    },
+    {
+      "title": "Try",
+      "file": "04.wav",
+      "start": 0,
+      "duration": 30
+    },
+    {
+      "title": "Right（撕咬进行曲）",
+      "file": "05.wav",
+      "start": 0,
+      "duration": 30
+    },
+    {
+      "title": "Amazon",
+      "file": "06.wav",
+      "start": 0,
+      "duration": 26.0105
+    }
+  ]
+}

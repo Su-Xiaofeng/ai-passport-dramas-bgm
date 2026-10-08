@@ -42,6 +42,10 @@ it anything—from a pocket companion to something no one has imagined yet.
 | --- | --- | --- |
 | Open firmware and reusable examples give you room to shape your own experience. | Start from an idea and follow clear guides to make it real, even if this is your first build. | Make a companion, a tool, a game—or anything you can imagine. |
 
+This repository builds [Queen Reborn BGM](applications/queen-bgm.md);
+see [music sources](../assets/music/README.md) for the recordings. The hardware
+and example material below describes reusable BSP and upstream reference code.
+
 ## Find your starting point
 
 | I want to… | Start here |
@@ -52,7 +56,8 @@ it anything—from a pocket companion to something no one has imagined yet.
 | Explore the board or contribute | [Hardware guide](hardware-design/AI_HARDWARE_DEVELOPMENT_GUIDE.md) · [Contributing](../.github/CONTRIBUTING.md) |
 
 > [!IMPORTANT]
-> `main` is a minimal, runnable **hardware-test baseline**, not a finished application.
+> Upstream `main` is a minimal **hardware-test baseline**; this repository builds
+> the BGM player from `main/`.
 > Derivative applications must design their own UI; the current demo test menu and
 > screens must not be reused. BSP APIs and non-UI logic remain reusable.
 
@@ -105,7 +110,7 @@ When details are omitted, the assistant may choose conservative defaults that do
 
 Each `demo/*` branch evolves the baseline into an independent application. The branches demonstrate how specific problems were solved. New applications should normally branch from `main` and consult relevant examples instead of merging multiple demos wholesale.
 
-The menu and `demo_*.c` pages on `main` are hardware-capability tests, not an application UI. Every derivative application must redesign and implement its own screens and interaction flow; using the current test menu, screens, or visual shell is prohibited. Renaming or recoloring them does not satisfy this requirement. BSP APIs, ordinary LVGL widgets, lifecycle patterns, and isolated logic may still be reused. See the [mandatory UI redesign rule](development/ai-guide.md#mandatory-ui-redesign-for-derivative-applications); maintenance of the baseline hardware-test demo itself is a separate task.
+The menu and `demo_*.c` pages on upstream `main` are hardware-capability tests, not an application UI. Every derivative application must redesign and implement its own screens and interaction flow; using the current test menu, screens, or visual shell is prohibited. Renaming or recoloring them does not satisfy this requirement. BSP APIs, ordinary LVGL widgets, lifecycle patterns, and isolated logic may still be reused. See the [mandatory UI redesign rule](development/ai-guide.md#mandatory-ui-redesign-for-derivative-applications); maintenance of the baseline hardware-test demo itself is a separate task.
 
 | Branch | Application | Patterns worth reusing |
 | --- | --- | --- |
@@ -133,7 +138,7 @@ git switch main
 git switch -c feature/my-passport-app
 ```
 
-Example branches may change the same menu, configuration, or driver in incompatible ways. Understand the differences before extracting a state model, asset pipeline, or concurrency pattern. Code appearing in an example branch is not automatically part of the current `main` BSP contract.
+Example branches may change the same menu, configuration, or driver in incompatible ways. Understand the differences before extracting a state model, asset pipeline, or concurrency pattern. Code appearing in an example branch is not automatically part of the documented BSP contract.
 
 </details>
 
@@ -148,7 +153,7 @@ See [firmware layout](development/engineering/firmware-layout.md).
 <details>
 <summary><strong>Expand the capability table</strong> — interfaces, limits, and implementation details</summary>
 
-The table below describes the application capabilities implemented by the current `main` branch. It is not a list of everything that might be possible according to the chip datasheet.
+The table below describes the application capabilities implemented by the BSP and upstream reference examples. It is not a list of everything that might be possible according to the chip datasheet.
 
 | Capability | Confirmed implementation | Application interface | Boundaries that must be respected |
 | --- | --- | --- | --- |
@@ -183,7 +188,7 @@ in `main`. Keep that boundary when building your own firmware.
 ```text
 components/bsp/include/  Public BSP APIs and bsp_pins.h hardware facts
 components/bsp/src/      Display, button, audio, battery, and shared-I2C implementations
-main/                    Minimal menu, LVGL UI, and independent hardware demo pages
+main/                    BGM UI, state, decoding and tasks; retained upstream references
 tests/                   Lightweight logic tests that can run without hardware
 tools/                   Shared local/CI validation and firmware verification scripts
 docs/                    Project docs, changelog, engineering/contribution rules, and design references
@@ -205,6 +210,8 @@ provide reference material. Choose the entry that matches your task.
 
 | Resource | What you will find |
 | --- | --- |
+| [BGM player](applications/queen-bgm.md) | Current controls, music, fonts and builds |
+| [Music sources](../assets/music/README.md) | Six recording links, excerpt durations and provenance hashes |
 | [Development](development/README.md) | AI workflow, engineering conventions, CI, and release guidance |
 | [AI skills](../skills/README.md) | Development, environment setup, builds, device testing, and debugging |
 | [Hardware](hardware-design/README.md) | Board facts, interface boundaries, acceptance checklists, and troubleshooting |

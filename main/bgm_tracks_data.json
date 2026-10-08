@@ -1,0 +1,65 @@
+{
+  "audio_bytes": 1317124,
+  "tracks": [
+    {
+      "title": "囚笼",
+      "loaded": true,
+      "source_sha256": "74b8784497d3a3198cabe01d9c5a1740741c13d1d2d5b250ea8ca55ce9411b92",
+      "encoded_sha256": "3c14f5b30d4fc7a81877706ea7af5e6ec6b964f4046c0b427291c0fefda8565b",
+      "samples": 480000,
+      "bytes": 240000,
+      "start": 0,
+      "seconds": 30.0
+    },
+    {
+      "title": "伏黑甚尔进行曲",
+      "loaded": true,
+      "source_sha256": "ec6a609f45613e61fd9b3c0fd80fbe38ef813b4db89c9a1c0271942886182c4d",
+      "encoded_sha256": "e16dfcc038975cffd2512ca694daa09059d1a3f919ef409ec63ade1c97b39491",
+      "samples": 480000,
+      "bytes": 240000,
+      "start": 0,
+      "seconds": 30.0
+    },
+    {
+      "title": "反派烧气救场",
+      "loaded": true,
+      "source_sha256": "44890214f484075a6d62324740af75dad9d74d18d96063ad6f37a897e499d815",
+      "encoded_sha256": "fff513784db7b0eae43a7bbe64f18d3e0fef14a31a44d21780f864da61f09105",
+      "samples": 298080,
+      "bytes": 149040,
+      "start": 0,
+      "seconds": 18.63
+    },
+    {
+      "title": "Try",
+      "loaded": true,
+      "source_sha256": "0f6d9a5d3cfba3ef337ebbb9a7d728e50b41f23c8da2f6a6fb41056e73101a6d",
+      "encoded_sha256": "668f90588a8199aba3af010dd1553726b952ac5e0e4f10da16978e50ab88bc5e",
+      "samples": 480000,
+      "bytes": 240000,
+      "start": 0,
+      "seconds": 30.0
+    },
+    {
+      "title": "Right（撕咬进行曲）",
+      "loaded": true,
+      "source_sha256": "4c0033880f91451d276b7258a54a3d72f4dd8361b5b3230691839add1ba7e720",
+      "encoded_sha256": "911a1daecfc1f9a9d8190dc1c63c2494f6d9622a9d857d8d5d7f9fcddd92f86c",
+      "samples": 480000,
+      "bytes": 240000,
+      "start": 0,
+      "seconds": 30.0
+    },
+    {
+      "title": "Amazon",
+      "loaded": true,
+      "source_sha256": "51c5aaa496b58d4088912a56024dc439a9efd0139c8e92b1241ea0a8071f39d8",
+      "encoded_sha256": "6f3a994ddf31e99d8976bc8e7b22f14fef9d2b636f3a6a42de9659a31d297f79",
+      "samples": 416168,
+      "bytes": 208084,
+      "start": 0,
+      "seconds": 26.0105
+    }
+  ]
+}
